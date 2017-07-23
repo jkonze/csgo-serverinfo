@@ -2,7 +2,6 @@
     "name": "wasnlosdu/csgo-serverinfo",
     "type": "project",
     "require": {
-        "php": "7.0",
         "xpaw/php-source-query-class": "^1.0",
         "slim/slim": "^3.0",
         "guzzlehttp/guzzle": "^6.0"
