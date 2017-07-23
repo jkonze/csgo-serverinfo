@@ -1,2 +1,7 @@
-# csgo-serverinfo
-This API will provide you with a json that has some cool info about your CS:GO Server. 🔫😎
+# CSGO Server Api
+
+🔫🙄
+
+## Introduction
+
+> This project will allow you to query a csgo server for information about it.
