@@ -22,6 +22,29 @@
   align-items: center;
   flex-flow: row wrap; }
 
+.button {
+  width: 130px;
+  display: inline-block;
+  height: 38px;
+  padding: 6px 14px;
+  font-size: 14px;
+  letter-spacing: .035em;
+  background: rgba(73, 115, 48, 0.5);
+  color: #83c648;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955), border-color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955), background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  user-select: none; }
+  .button:hover, .button:focus {
+    outline: 0;
+    border-color: #83c648; }
+  .button p {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px; }
+
 button {
   display: inline-block;
   height: 38px;

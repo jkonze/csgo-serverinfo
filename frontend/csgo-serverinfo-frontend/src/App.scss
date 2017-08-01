@@ -37,6 +37,32 @@ $black: #142029;
   flex-flow: row wrap;
 }
 
+.button{
+  width: 130px;
+  display: inline-block;
+  height: 38px;
+  padding: 6px 14px;
+  font-size: 14px;
+  letter-spacing: .035em;
+  background: rgba($green, .5);
+  color: $green-light;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color .1s cubic-bezier(.455,.03,.515,.955),border-color .1s cubic-bezier(.455,.03,.515,.955),background .1s cubic-bezier(.455,.03,.515,.955);
+  user-select: none;
+
+  &:hover, &:focus {
+    outline: 0;
+    border-color: $green-light;
+  }
+  p{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
 button {
   display: inline-block;
   height: 38px;
@@ -57,7 +83,6 @@ button {
     border-color: $green-light;
   }
 }
-
 a {
   position: relative;
   color: inherit;
