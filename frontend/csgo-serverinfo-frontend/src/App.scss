@@ -131,24 +131,26 @@ a {
 }
 
 .server {
-  flex: 1;
   box-sizing: border-box;
   position: relative;
   color: white;
 
-  margin: 4px;
-  max-width: 400px;
-
-  border: 2px solid rgba(black, .35);
-  background-color: lighten($black, 5%);
-
+  /* padding: 4px; */
+  width: 100%;
+  /* max-width: 400px; */
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  background-color: #1c2d3a;
   overflow: hidden;
   border-radius: 6px;
-
   * {
     position: relative;
   }
-
+  @media (min-width:768px) {
+    width: 50%;
+  }
+  @media (min-width:992px) {
+    width: 25%;
+  }
   &__header {
     background-repeat: no-repeat;
     background-position: top center;

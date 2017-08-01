@@ -95,18 +95,24 @@ a {
     font-style: italic; }
 
 .server {
-  flex: 1;
   box-sizing: border-box;
   position: relative;
   color: white;
-  margin: 4px;
-  max-width: 400px;
+  /* padding: 4px; */
+  width: 100%;
+  /* max-width: 400px; */
   border: 2px solid rgba(0, 0, 0, 0.35);
   background-color: #1c2d3a;
   overflow: hidden;
   border-radius: 6px; }
   .server * {
     position: relative; }
+  @media (min-width: 768px) {
+    .server {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .server {
+      width: 25%; } }
   .server__header {
     background-repeat: no-repeat;
     background-position: top center;
