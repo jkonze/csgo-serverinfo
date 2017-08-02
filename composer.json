@@ -14,5 +14,10 @@
             "name": "Johannes Konze",
             "email": "johannes@konze.it"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "CsgoApi\\": "app/Classes/"
+        }
+    }
 }

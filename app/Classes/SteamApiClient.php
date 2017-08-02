@@ -1,6 +1,9 @@
 <?php
 
+namespace CsgoApi;
+
 use GuzzleHttp\Client;
+use PHPUnit\Runner\Exception;
 
 class SteamApiClient
 {
@@ -63,9 +66,8 @@ class SteamApiClient
     public function __construct(string $map)
     {
         $this->setMap($map);
-        if ($this->isInteger($map)) {
+        if ($this->isInteger($this->getMap())) {
             $this->createGuzzleClient();
-
         }
     }
 
@@ -86,6 +88,5 @@ class SteamApiClient
         $mapInfo['maptitle'] = $responseBody['response']['publishedfiledetails'][0]['title'];
         return $mapInfo;
     }
-
 
 }
