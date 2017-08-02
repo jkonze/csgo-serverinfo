@@ -34,7 +34,7 @@ $app->post('/csgo', function (Request $request, Response $response) {
             $res['image_url'] = $steamResponse['url'];
         } else {
             $res['map_title'] = $rawInfo->Map;
-            $res['image_url'] = $_SERVER['SERVER_NAME']. '/Resources/default.jpg';
+            $res['image_url'] = $_SERVER['SERVER_NAME'] . '/Resources/default.jpg';
         }
 
     } catch (Exception $exception) {
