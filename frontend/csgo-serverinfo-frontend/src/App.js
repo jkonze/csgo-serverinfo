@@ -13,6 +13,9 @@ class App extends Component {
             <ServerItem />
             <ServerItem />
             <ServerItem />
+            <ServerItem />
+            <ServerItem />
+            <ServerItem />
          </div>
      </div>
     );
