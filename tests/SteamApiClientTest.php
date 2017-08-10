@@ -3,7 +3,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
-
+use CsgoApi\SteamApiClient;
 
 /**
  * Class SteamApiClientTest

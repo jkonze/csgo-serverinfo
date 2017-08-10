@@ -1,5 +1,5 @@
 <?php
-
+namespace CsgoApi;
 class ServerData
 {
     private $serverinfo;
@@ -50,10 +50,7 @@ class ServerData
 
         return $this->serverport;
     }
-
-    /**
-     * @param string $serverport
-     */
+    
     public function setServerport()
     {
         if (isset($this->serverinfo['server_port']) && preg_match('/^(?:\d{2,5})+$/', $this->serverinfo['server_port'])) {
